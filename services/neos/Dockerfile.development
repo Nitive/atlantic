@@ -1,0 +1,26 @@
+FROM php:7.3-cli
+
+ENV PROJECT_ROOT /app
+
+RUN apt-get update \
+    # wget
+    && apt-get install -y wget \
+    # GraphicsMagick
+    && apt-get install -y \
+        libgraphicsmagick1-dev graphicsmagick --no-install-recommends \
+    && pecl -vvv install gmagick-beta && docker-php-ext-enable gmagick \
+    # pdo_mysql
+    && docker-php-ext-install pdo_mysql \
+    # redis
+    && pecl install redis && docker-php-ext-enable redis \
+    # cleanup
+    && apt-get clean && rm -rf /var/lib/apt/lists/* \
+    # composer
+    && wget https://raw.githubusercontent.com/composer/getcomposer.org/5eb0614d3fa7130b363698d3dca52c619b463615/web/installer \
+        -O - -q | php -- --quiet \
+    && mv composer.phar /usr/bin/composer
+
+WORKDIR $PROJECT_ROOT
+EXPOSE 8081
+
+CMD [ "./flow", "server:run", "--host", "0.0.0.0" ]

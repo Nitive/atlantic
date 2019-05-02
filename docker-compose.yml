@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  neos:
+    container_name: atlantic_neos
+    build:
+      context: ./services/neos
+      dockerfile: ./Dockerfile.development
+    environment:
+      FLOW_CONTEXT: 'Development/Docker'
+    ports:
+      - 8081:8081
+    volumes:
+      - './services/neos:/app:cached'
+    depends_on:
+      - db
+
+  db:
+    container_name: atlantic_db
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: 'db'
+    volumes:
+      - db:/var/lib/mysql
+    ports:
+      - 13306:3306
+
+volumes:
+  db:
