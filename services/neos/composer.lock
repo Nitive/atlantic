@@ -4,8 +4,35 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bd9f13ccc0cdcaf945d483343192d9e2",
+    "content-hash": "93c1965ef6c5ddf8b1fb21f01de0967e",
     "packages": [
+        {
+            "name": "atlanticchallenge/site",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "./DistributionPackages/AtlanticChallenge.Site",
+                "reference": "d25145d5d419d6f296524c97df4f52b4e586f6f0"
+            },
+            "require": {
+                "neos/neos": "*",
+                "neos/nodetypes": "*"
+            },
+            "suggest": {
+                "neos/seo": "*"
+            },
+            "type": "neos-site",
+            "extra": {
+                "neos": {
+                    "package-key": "AtlanticChallenge.Site"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "AtlanticChallenge\\Site\\": "Classes/"
+                }
+            }
+        },
         {
             "name": "behat/transliterator",
             "version": "v1.2.0",
@@ -7296,6 +7323,7 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "neos/setup": 20,
+        "atlanticchallenge/site": 20,
         "neos/buildessentials": 20,
         "neos/behat": 20
     },
