@@ -1,0 +1,9 @@
+.Text {
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.Text p {
+    margin-top: 13px;
+    margin-bottom: 13px;
+}

@@ -7,7 +7,7 @@ prototype(Atlantic.Site:Content.Text) < prototype(Neos.Neos:ContentComponent) {
     }
 
     renderer = afx`
-        <div>
+        <div class="Text">
             {props.text}
         </div>
     `
