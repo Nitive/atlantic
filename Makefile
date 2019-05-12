@@ -2,6 +2,10 @@
 install:
 	docker run --volume `pwd`/services/neos:/app -it --rm composer install
 
+.PHONY: update
+update:
+	docker run --volume `pwd`/services/neos:/app -it --rm composer update
+
 .PHONY: start-db-in-docker
 start-db-in-docker:
 	docker-compose up -d db
