@@ -1,0 +1,11 @@
+prototype(Atlantic.Site:Content.PageContent) < prototype(Neos.Neos:ContentComponent) {
+    content = Neos.Neos:ContentCollection {
+        nodePath = 'content'
+    }
+
+    renderer = afx`
+        <div class="PageContent">
+            {props.content}
+        </div>
+    `
+}

@@ -1,0 +1,39 @@
+# superTypes:
+#   'Neos.Neos:Content': true
+# ui:
+#   label: 'Page Content'
+#   icon: 'icon-columns'
+#   group: 'atlantic'
+#   position: 400
+# childNodes:
+#   content:
+#     type: 'Neos.Demo:Collection.Content.Column'
+
+# 'Atlantic.Site:Content.Text1':
+#   superTypes:
+#     'Neos.Neos:Content': true
+#     'Neos.NodeTypes.BaseMixins:TextMixin': true
+#   ui:
+#     group: 'atlantic'
+#     label: 'Plain Text'
+#     icon: 'icon-file-text'
+
+
+
+'Atlantic.Site:Content.PageContent':
+  superTypes:
+    'Neos.Neos:Content': true
+  ui:
+    group: 'atlantic'
+    label: 'Page Content'
+  childNodes:
+    content:
+      type: 'Neos.Neos:ContentCollection'
+
+#   constraints:
+#     nodeTypes:
+#       '*': false
+#       'Atlantic.Site:Constraint.Content.PageContent': true
+
+# 'Atlantic.Site:Constraint.Content.PageContent':
+#   abstract: true

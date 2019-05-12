@@ -4,8 +4,11 @@
 <html>
 <head>
 	<f:section name="stylesheets">
-        <link rel="stylesheet" href="resource://Neos.Demo/Public/Styles/Base.css" />
-        <link rel="stylesheet" href="resource://Neos.Demo/Public/Styles/Text.css" />
+        <link rel="stylesheet" href="resource://Atlantic.Site/Public/Styles/Base.css" />
+        <link rel="stylesheet" href="resource://Atlantic.Site/Public/Styles/HomePageHeader.css" />
+        <link rel="stylesheet" href="resource://Atlantic.Site/Public/Styles/PageBox.css" />
+        <link rel="stylesheet" href="resource://Atlantic.Site/Public/Styles/PageContent.css" />
+        <link rel="stylesheet" href="resource://Atlantic.Site/Public/Styles/Text.css" />
 	</f:section>
 	<f:section name="headScripts">
 		<!-- Put your scripts inclusions for the head here, they will be included in your website by Fusion -->
@@ -13,20 +16,8 @@
 </head>
 <body>
 <f:section name="body">
-	<nav class="menu">
-		{parts.menu -> f:format.raw()}
-	</nav>
-	<div class="content">
+	<div class="PageBox">
 		{content.main -> f:format.raw()}
-
-	<f:comment>
-		If you enabled the "sidebar" content area in your NodeType configuration and Fusion, you can uncomment this
-		section to actually render in in your output. Remove the "f:comment" tag and this text, and adjust the markup as you
-		like.
-
-		{content.sidebar -> f:format.raw()}
-	</f:comment>
-
 	</div>
 </f:section>
 <f:section name="bodyScripts">

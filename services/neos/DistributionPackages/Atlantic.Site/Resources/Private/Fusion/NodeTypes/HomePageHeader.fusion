@@ -1,0 +1,3 @@
+prototype(Atlantic.Site:Content.HomePageHeader) < prototype(Neos.Neos:Content) {
+    templatePath = 'resource://Atlantic.Site/Private/Templates/HomePageHeader.html'
+}

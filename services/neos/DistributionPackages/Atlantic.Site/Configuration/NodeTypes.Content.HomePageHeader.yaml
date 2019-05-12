@@ -1,0 +1,6 @@
+'Atlantic.Site:Content.HomePageHeader':
+  superTypes:
+    'Neos.Neos:Content': true
+  ui:
+    group: 'atlantic'
+    label: 'Home Page Header'
