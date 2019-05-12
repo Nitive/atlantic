@@ -1,6 +1,13 @@
+.PHONY: install-composer
+install-composer:
+	sh ./install-composer.sh
+
 .PHONY: install
-install:
+install: install-composer
 	docker run --volume `pwd`/services/neos:/app -it --rm composer install
+
+create-project:
+	docker run --volume `pwd`/services/neos:/app -it --rm composer create-project neos/neos-base-distribution /app
 
 .PHONY: update
 update:
