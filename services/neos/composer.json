@@ -27,7 +27,8 @@
         "neos/redirecthandler-neosadapter": "~3.0",
         "neos/redirecthandler-databasestorage": "~3.0",
 
-        "neos/setup": "@dev"
+        "neos/setup": "@dev",
+        "atlantic/site": "@dev"
     },
     "require-dev": {
         "neos/buildessentials": "@dev",
@@ -43,7 +44,7 @@
         }
     },
     "replace": {
-        "neos/neos-base-distribution": "4.3.0"
+        "neos/neos-base-distribution": "4.3.1"
     },
     "suggest": {
         "ext-pdo_sqlite": "For running functional tests out-of-the-box this is required"

@@ -1,0 +1,7 @@
+Neos:
+  Neos:
+    nodeTypes:
+      groups:
+        atlantic:
+          label: 'Atlantic'
+          position: 0
