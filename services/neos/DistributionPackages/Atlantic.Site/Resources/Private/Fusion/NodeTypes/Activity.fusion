@@ -1,0 +1,33 @@
+prototype(Atlantic.Site:Content.Activity) < prototype(Neos.Neos:ContentComponent) {
+    text = Neos.Neos:Editable {
+        property = 'text'
+    }
+
+    title = Neos.Neos:Editable {
+        property = 'title'
+    }
+
+    src = Neos.Neos:ImageUri {
+        asset = ${q(node).property('image')}
+        maximumHeight = 480
+    }
+
+    renderer = afx`
+        <article class="Activity">
+            <figure class="Activity__photo">
+                <picture class="Activity__picture">
+                    <img src={props.src} class="Activity__img" height="240" alt="" />
+                    <span class="Activity__caption">
+                        Подпись<br />на две строки
+                    </span>
+                </picture>
+                <figcaption class="Activity__title">
+                    {props.title}
+                </figcaption>
+            </figure>
+            <span class="Activity__text">
+                {props.text}
+            </span>
+        </article>
+    `
+}

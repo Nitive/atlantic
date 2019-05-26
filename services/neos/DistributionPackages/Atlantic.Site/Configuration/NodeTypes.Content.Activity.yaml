@@ -1,0 +1,30 @@
+'Atlantic.Site:Content.Activity':
+  superTypes:
+    'Neos.Neos:Content': true
+    'Neos.NodeTypes.BaseMixins:TextMixin': true
+  ui:
+    group: 'atlantic'
+    label: 'Activity'
+    icon: 'icon-file-text'
+
+    inspector:
+      groups:
+        'activity':
+          label: Activity
+
+  properties:
+    'title':
+      type: string
+      ui:
+        label: 'Title'
+        reloadIfChanged: true
+        inspector:
+          group: 'activity'
+
+    'image':
+      type: 'Neos\Media\Domain\Model\ImageInterface'
+      ui:
+        label: 'Image'
+        reloadIfChanged: true
+        inspector:
+          group: 'activity'

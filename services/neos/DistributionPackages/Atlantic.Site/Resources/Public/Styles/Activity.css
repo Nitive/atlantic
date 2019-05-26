@@ -1,0 +1,63 @@
+.Activity {
+    /* margin-bottom: 27px; */
+    width: 46.9%;
+    box-sizing: border-box;
+    margin-bottom: 28px;
+}
+
+/* .summer-photo */
+.Activity__photo {
+    position: relative;
+    margin: 0;
+}
+
+/* .summer-picture */
+.Activity__picture {
+    display: block;
+    overflow: hidden;
+    height: 240px;
+}
+
+/* .summer-img */
+.Activity__img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* .article-hidden-text */
+.Activity__caption {
+    display: block;
+    transform: translateY(0);
+    transition: transform .3s ease;
+    background-color: rgba(0, 0, 0, 0.72);
+    color: #fff;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.3px;
+    padding: 5px 10px;
+}
+
+/* .summer-title */
+.Activity__title {
+    position: absolute;
+    transform-origin: 0 0;
+    transform: rotate(-90deg);
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 26px;
+    left: -28px;
+    bottom: -28px;
+}
+
+/* .content-text._summer */
+.Activity__text {
+    display: block;
+    margin-top: 6px;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.Activity__text p {
+    margin: 0;
+}
