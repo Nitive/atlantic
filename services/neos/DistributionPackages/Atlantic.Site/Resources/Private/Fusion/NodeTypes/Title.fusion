@@ -1,0 +1,11 @@
+prototype(Atlantic.Site:Content.Title) < prototype(Neos.Neos:ContentComponent) {
+    text = Neos.Neos:Editable {
+        property = 'text'
+    }
+
+    renderer = afx`
+        <div class="Title">
+            {props.text}
+        </div>
+    `
+}
