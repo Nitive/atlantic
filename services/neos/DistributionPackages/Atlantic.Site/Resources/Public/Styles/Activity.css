@@ -1,8 +1,5 @@
 .Activity {
-    /* margin-bottom: 27px; */
-    width: 46.9%;
-    box-sizing: border-box;
-    margin-bottom: 28px;
+    max-width: 450px;
 }
 
 /* .summer-photo */

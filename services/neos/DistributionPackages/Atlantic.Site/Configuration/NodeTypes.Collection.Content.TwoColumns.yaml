@@ -1,0 +1,7 @@
+'Atlantic.Site:Collection.Content.TwoColumns':
+  superTypes:
+    Neos.Neos:Content: true
+    Neos.Neos:ContentCollection: true
+  ui:
+    group: 'atlantic'
+    label: 'Two columns'
