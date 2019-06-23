@@ -1,0 +1,11 @@
+.Separator {
+    height: 1px;
+}
+
+.Separator_type_light {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.Separator_type_dark {
+    background: #c9d1db;
+}

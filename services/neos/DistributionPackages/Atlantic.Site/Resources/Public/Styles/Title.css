@@ -1,13 +1,8 @@
-.Title {
+.Title h2 {
+    margin: 0;
     font-family: 'Playfair Display';
     font-weight: 700;
     font-size: 36px;
     letter-spacing: -0.6px;
     line-height: 48px;
-    margin-top: 26px;
-    margin-bottom: 26px;
-}
-
-.Title p {
-    margin: 0;
 }

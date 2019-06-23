@@ -3,6 +3,14 @@
     line-height: 26px;
 }
 
+.Text h3 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 13px;
+    font-weight: 500;
+    font-size: inherit;
+}
+
 .Text > p {
     margin-top: 13px;
     margin-bottom: 13px;

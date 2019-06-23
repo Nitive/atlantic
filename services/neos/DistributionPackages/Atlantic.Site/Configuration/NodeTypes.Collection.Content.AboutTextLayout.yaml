@@ -7,6 +7,6 @@
 
   childNodes:
     firstColumn:
-      type: 'Atlantic.Site:Collection.Content.Column'
+      type: 'Atlantic.Site:Collection.Content.Group'
     secondColumn:
-      type: 'Atlantic.Site:Collection.Content.Column'
+      type: 'Atlantic.Site:Collection.Content.Group'

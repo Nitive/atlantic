@@ -6,3 +6,27 @@
     group: 'atlantic'
     label: 'Title'
     icon: 'icon-file-text'
+
+    inspector:
+      groups:
+        offsets:
+          label: 'Offsets'
+
+  properties:
+    topOffset:
+      type: integer
+      defaultValue: 26
+      ui:
+        label: 'Top offset (in pixels)'
+        reloadIfChanged: true
+        inspector:
+          group: 'offsets'
+
+    bottomOffset:
+      type: integer
+      defaultValue: 26
+      ui:
+        label: 'Bottom offset (in pixels)'
+        reloadIfChanged: true
+        inspector:
+          group: 'offsets'

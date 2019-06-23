@@ -3,8 +3,13 @@ prototype(Atlantic.Site:Content.Title) < prototype(Neos.Neos:ContentComponent) {
         property = 'text'
     }
 
+    style = ${
+        'margin-top: ' + q(node).property('topOffset') + 'px;' +
+        'margin-bottom: ' + q(node).property('bottomOffset') + 'px'
+    }
+
     renderer = afx`
-        <div class="Title">
+        <div class="Title" style={props.style}>
             {props.text}
         </div>
     `

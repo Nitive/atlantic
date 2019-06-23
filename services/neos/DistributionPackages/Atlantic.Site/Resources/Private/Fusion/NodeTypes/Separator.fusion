@@ -1,0 +1,10 @@
+prototype(Atlantic.Site:Content.Separator) < prototype(Neos.Neos:ContentComponent) {
+    className = ${
+        'Separator' +
+        ' Separator_type_' + q(node).property('type')
+    }
+
+    renderer = afx`
+        <div class={props.className}></div>
+    `
+}

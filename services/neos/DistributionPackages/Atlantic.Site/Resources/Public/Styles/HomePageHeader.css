@@ -1,15 +1,17 @@
 .PageHeader {
-    margin-top: 167px;
+    margin-top: 104px;
+    margin-bottom: 26px;
 }
 
 .PageTitle {
+    margin: 0;
+    margin-left: 18px;
     position: relative;
     font-family: 'Playfair Display', serif;
     font-weight: 900;
     font-size: 110px;
     line-height: 147px;
     letter-spacing: -1.5px;
-    margin-left: 18px;
     text-align: center;
 }
 

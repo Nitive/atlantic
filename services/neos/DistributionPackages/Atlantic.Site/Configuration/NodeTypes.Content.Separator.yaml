@@ -1,0 +1,29 @@
+'Atlantic.Site:Content.Separator':
+  superTypes:
+    'Neos.Neos:Content': true
+  ui:
+    group: 'atlantic'
+    label: 'Separator'
+
+    inspector:
+      groups:
+        separator:
+          label: 'Separator'
+
+  properties:
+    type:
+      type: string
+      defaultValue: 'light'
+      ui:
+        label: 'Type'
+        reloadIfChanged: true
+        inspector:
+          group: 'separator'
+          editor: Content/Inspector/Editors/SelectBoxEditor
+          editorOptions:
+            placeholder: 'Type of separator'
+            values:
+              light:
+                label: 'Light'
+              dark:
+                label: 'Dark'
