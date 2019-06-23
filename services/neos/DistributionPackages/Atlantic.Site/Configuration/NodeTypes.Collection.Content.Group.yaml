@@ -5,3 +5,26 @@
   ui:
     group: 'atlantic'
     label: 'Group'
+
+    inspector:
+      groups:
+        sizes:
+          label: 'Sizes'
+
+
+  properties:
+    width:
+      type: integer
+      ui:
+        label: 'Width (in pixels)'
+        reloadIfChanged: true
+        inspector:
+          group: 'sizes'
+
+    height:
+      type: integer
+      ui:
+        label: 'Height (in pixels)'
+        reloadIfChanged: true
+        inspector:
+          group: 'sizes'
