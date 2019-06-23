@@ -13,7 +13,7 @@
           label: Activity
 
   properties:
-    'title':
+    title:
       type: string
       ui:
         aloha:
@@ -23,7 +23,17 @@
         inspector:
           group: 'activity'
 
-    'image':
+    caption:
+      type: string
+      ui:
+        aloha:
+          placeholder: 'Caption'
+        label: 'Caption'
+        reloadIfChanged: true
+        inspector:
+          group: 'activity'
+
+    image:
       type: 'Neos\Media\Domain\Model\ImageInterface'
       ui:
         label: 'Image'

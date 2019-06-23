@@ -1,10 +1,14 @@
 prototype(Atlantic.Site:Content.Activity) < prototype(Neos.Neos:ContentComponent) {
+    title = Neos.Neos:Editable {
+        property = 'title'
+    }
+
     text = Neos.Neos:Editable {
         property = 'text'
     }
 
-    title = Neos.Neos:Editable {
-        property = 'title'
+    caption = Neos.Neos:Editable {
+        property = 'caption'
     }
 
     src = Neos.Neos:ImageUri {
@@ -18,7 +22,7 @@ prototype(Atlantic.Site:Content.Activity) < prototype(Neos.Neos:ContentComponent
                 <picture class="Activity__picture">
                     <img src={props.src} class="Activity__img" height="240" alt="" />
                     <span class="Activity__caption">
-                        Подпись<br />на две строки
+                        {props.caption}
                     </span>
                 </picture>
                 <figcaption class="Activity__title">
