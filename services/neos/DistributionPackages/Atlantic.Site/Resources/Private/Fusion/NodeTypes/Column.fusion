@@ -1,10 +1,10 @@
-prototype(Atlantic.Site:Collection.Content.TwoColumns) < prototype(Neos.Neos:ContentComponent) {
+prototype(Atlantic.Site:Collection.Content.Column) < prototype(Neos.Neos:ContentComponent) {
     content = Neos.Neos:ContentCollection {
         nodePath = 'content'
     }
 
     renderer = afx`
-        <div class="TwoColumnsGrid">
+        <div class="Column">
             {props.content}
         </div>
     `

@@ -34,6 +34,9 @@
     letter-spacing: 0.3px;
     padding: 5px 10px;
 }
+.Activity__picture:hover .Activity__caption {
+    transform: translateY(-100%);
+}
 
 /* .summer-title */
 .Activity__title {

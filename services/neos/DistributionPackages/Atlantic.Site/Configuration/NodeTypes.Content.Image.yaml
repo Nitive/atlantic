@@ -1,0 +1,47 @@
+'Atlantic.Site:Content.Image':
+  superTypes:
+    'Neos.Neos:Content': true
+    'Neos.NodeTypes.BaseMixins:TextMixin': true
+  ui:
+    group: 'atlantic'
+    label: 'Image'
+    icon: 'icon-file-text'
+
+    inspector:
+      groups:
+        image:
+          label: 'Image'
+
+  properties:
+    image:
+      type: 'Neos\Media\Domain\Model\ImageInterface'
+      ui:
+        label: 'Image'
+        reloadIfChanged: true
+        inspector:
+          group: 'image'
+          editorOptions:
+            required: true
+
+    caption:
+      type: string
+      ui:
+        aloha:
+          placeholder: 'Caption'
+        label: 'Caption'
+        reloadIfChanged: true
+        inspector:
+          group: 'image'
+          editorOptions:
+            required: true
+
+    height:
+      type: integer
+      defaultValue: 10
+      ui:
+        label: 'Height (in pixels)'
+        reloadIfChanged: true
+        inspector:
+          group: 'image'
+          editorOptions:
+            required: true

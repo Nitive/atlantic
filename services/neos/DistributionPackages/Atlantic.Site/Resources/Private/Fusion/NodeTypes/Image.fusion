@@ -1,0 +1,23 @@
+prototype(Atlantic.Site:Content.Image) < prototype(Neos.Neos:ContentComponent) {
+    caption = Neos.Neos:Editable {
+        property = 'caption'
+    }
+
+    src = Neos.Neos:ImageUri {
+        asset = ${q(node).property('image')}
+        maximumHeight = ${props.height * 2}
+    }
+
+    caption = Neos.Neos:Editable {
+        property = 'caption'
+    }
+
+    renderer = afx`
+        <picture class="Image">
+            <img src={props.src} class="Image__img" height={props.height} alt="" />
+            <span class="Image__caption">
+                {props.caption}
+            </span>
+        </picture>
+    `
+}

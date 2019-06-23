@@ -1,0 +1,16 @@
+prototype(Atlantic.Site:Collection.Content.AboutTextLayout) < prototype(Neos.Neos:ContentComponent) {
+    firstColumn = Neos.Neos:ContentCollection {
+        nodePath = 'firstColumn'
+    }
+
+    secondColumn = Neos.Neos:ContentCollection {
+        nodePath = 'secondColumn'
+    }
+
+    renderer = afx`
+        <div class="AboutTextLayout">
+            <div>{props.firstColumn}</div>
+            <div>{props.secondColumn}</div>
+        </div>
+    `
+}

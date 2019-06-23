@@ -16,6 +16,8 @@
     'title':
       type: string
       ui:
+        aloha:
+          placeholder: 'Title'
         label: 'Title'
         reloadIfChanged: true
         inspector:

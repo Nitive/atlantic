@@ -3,7 +3,11 @@
     line-height: 26px;
 }
 
-.Text p {
+.Text > p {
     margin-top: 13px;
     margin-bottom: 13px;
+}
+
+.Text > p:first-child {
+    margin-top: 0;
 }

@@ -1,0 +1,23 @@
+a:not([class]) {
+    color: #318dfa;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+}
+
+a:not([class]):visited {
+    color: #6848ff;
+}
+
+a:not([class]):hover {
+    color: #0075fa;
+}
+
+a:not([class]).focus-visible {
+    outline: none;
+    position: relative;
+    border-bottom: 3px solid #318dfa;
+}
+
+a:not([class]):visited.focus-visible {
+    border-color: #6848ff;
+}

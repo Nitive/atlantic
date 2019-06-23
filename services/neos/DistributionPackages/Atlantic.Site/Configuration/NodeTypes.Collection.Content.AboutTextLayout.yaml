@@ -1,0 +1,12 @@
+'Atlantic.Site:Collection.Content.AboutTextLayout':
+  superTypes:
+    Neos.Neos:Content: true
+  ui:
+    group: 'atlantic'
+    label: 'About Text Layout'
+
+  childNodes:
+    firstColumn:
+      type: 'Atlantic.Site:Collection.Content.Column'
+    secondColumn:
+      type: 'Atlantic.Site:Collection.Content.Column'

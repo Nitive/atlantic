@@ -1,0 +1,5 @@
+.AboutTextLayout {
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    grid-column-gap: 40px;
+}
