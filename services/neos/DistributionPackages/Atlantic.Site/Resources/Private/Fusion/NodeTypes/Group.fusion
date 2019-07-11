@@ -5,10 +5,12 @@ prototype(Atlantic.Site:Collection.Content.Group) < prototype(Neos.Neos:ContentC
 
     @context.width = ${q(node).property('width')}
     @context.height = ${q(node).property('height')}
+    @context.marginLeft = ${q(node).property('marginLeft')}
 
     style = ${
         (width ? ('width: ' + width + 'px;') : '') +
-        (height ? ('height: ' + height + 'px;') : '')
+        (height ? ('height: ' + height + 'px;') : '') +
+        (marginLeft ? ('margin-left: ' + marginLeft + 'px;') : '')
     }
 
     renderer = afx`

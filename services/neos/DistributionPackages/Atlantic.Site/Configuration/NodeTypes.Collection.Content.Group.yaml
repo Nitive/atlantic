@@ -11,7 +11,6 @@
         sizes:
           label: 'Sizes'
 
-
   properties:
     width:
       type: integer
@@ -25,6 +24,14 @@
       type: integer
       ui:
         label: 'Height (in pixels)'
+        reloadIfChanged: true
+        inspector:
+          group: 'sizes'
+
+    marginLeft:
+      type: integer
+      ui:
+        label: 'margin-left (in pixels)'
         reloadIfChanged: true
         inspector:
           group: 'sizes'
