@@ -1,0 +1,9 @@
+prototype(Atlantic.Site:Content.Input) < prototype(Neos.Neos:ContentComponent) {
+    @context.id = ${q(node).property('id')}
+    @context.type = ${q(node).property('type')}
+    @context.placeholder = ${q(node).property('placeholder')}
+
+    renderer = afx`
+        <input  id={props.id} type={props.type} placeholder={props.placeholder} class="Input" />
+    `
+}

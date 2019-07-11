@@ -1,0 +1,42 @@
+'Atlantic.Site:Content.Input':
+  superTypes:
+    'Neos.Neos:Content': true
+    'Neos.NodeTypes.BaseMixins:TextMixin': true
+
+  ui:
+    group: 'atlantic'
+    label: 'Input'
+    icon: 'icon-file-text'
+
+
+    inspector:
+      groups:
+        'controls':
+          label: Controls
+
+  properties:
+    id:
+      type: string
+      ui:
+        label: 'Id'
+        reloadIfChanged: true
+        inspector:
+          group: 'controls'
+
+    type:
+      type: string
+      defaultValue: 'text'
+      ui:
+        label: 'Type (email/text)'
+        reloadIfChanged: true
+        inspector:
+          group: 'controls'
+
+    placeholder:
+      type: string
+      defaultValue: 'Введите текст'
+      ui:
+        label: 'Placeholder'
+        reloadIfChanged: true
+        inspector:
+          group: 'controls'

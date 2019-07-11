@@ -1,0 +1,25 @@
+'Atlantic.Site:Content.Button':
+  superTypes:
+    'Neos.Neos:Content': true
+    'Neos.NodeTypes.BaseMixins:TextMixin': true
+
+  ui:
+    group: 'atlantic'
+    label: 'Button'
+    icon: 'icon-file-text'
+
+
+    inspector:
+      groups:
+        'controls':
+          label: Controls
+
+  properties:
+    type:
+      type: string
+      defaultValue: 'button'
+      ui:
+        label: 'Type (button/submit)'
+        reloadIfChanged: true
+        inspector:
+          group: 'controls'
