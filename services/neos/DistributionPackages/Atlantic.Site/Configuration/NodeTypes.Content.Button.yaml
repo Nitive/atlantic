@@ -17,6 +17,7 @@
       type: string
       defaultValue: 'Кнопка'
       ui:
+        inlineEditable: true
         label: 'Текст на кнопке'
         reloadIfChanged: true
         inspector:

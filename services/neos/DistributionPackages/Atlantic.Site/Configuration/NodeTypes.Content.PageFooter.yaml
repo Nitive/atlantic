@@ -1,6 +1,7 @@
 'Atlantic.Site:Content.PageFooter':
   superTypes:
-    'Neos.Neos:Content': true
+    Neos.Neos:Content: true
+
   ui:
     group: 'atlantic'
     label: 'Page Footer'

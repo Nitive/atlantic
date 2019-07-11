@@ -1,6 +1,7 @@
 'Atlantic.Site:Collection.Content.AboutTextLayout':
   superTypes:
     Neos.Neos:Content: true
+
   ui:
     group: 'atlantic'
     label: 'About Text Layout'

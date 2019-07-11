@@ -1,7 +1,8 @@
 'Atlantic.Site:Content.Title':
   superTypes:
-    'Neos.Neos:Content': true
-    'Neos.NodeTypes.BaseMixins:TextMixin': true
+    Neos.Neos:Content: true
+    Neos.NodeTypes.BaseMixins:TextMixin: true
+
   ui:
     group: 'atlantic'
     label: 'Title'

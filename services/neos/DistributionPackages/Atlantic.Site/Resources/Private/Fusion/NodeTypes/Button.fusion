@@ -1,15 +1,13 @@
 prototype(Atlantic.Site:Content.Button) < prototype(Neos.Neos:ContentComponent) {
-    content = Neos.Neos:Editable {
-        property = 'content'
+    text = Neos.Neos:Editable {
+        property = 'text'
     }
 
     @context.type = ${q(node).property('type')}
-    @context.text = ${q(node).property('text')}
 
     renderer = afx`
         <button type={props.type} class='Button'>
             {props.text}
-            {props.content}
         </button>
     `
 }

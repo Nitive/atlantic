@@ -8,7 +8,6 @@
     label: 'Input'
     icon: 'icon-file-text'
 
-
     inspector:
       groups:
         'controls':

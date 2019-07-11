@@ -3,10 +3,12 @@
 # to your needs or remove it if you do not need a custom page type.
 'Atlantic.Site:Page':
   superTypes:
-    'Neos.Neos:Document': true
+    Neos.Neos:Document: true
+
   ui:
     icon: 'icon-file'
     label: 'Atlantic.Site Custom Page'
+
   childNodes:
     main:
       type: 'Neos.Neos:ContentCollection'
