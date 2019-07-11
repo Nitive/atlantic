@@ -1,23 +1,28 @@
-a:not([class]) {
+a:not([class]),
+.Link {
     color: #318dfa;
     text-decoration: none;
     border-bottom: 3px solid transparent;
 }
 
-a:not([class]):visited {
+a:not([class]):visited,
+.Link:visited {
     color: #6848ff;
 }
 
-a:not([class]):hover {
+a:not([class]):hover,
+.Link:hover {
     color: #0075fa;
 }
 
-a:not([class]).focus-visible {
+a:not([class]).focus-visible,
+.Link.focus-visible {
     outline: none;
     position: relative;
     border-bottom: 3px solid #318dfa;
 }
 
-a:not([class]):visited.focus-visible {
+a:not([class]):visited.focus-visible,
+.Link:visited.focus-visible {
     border-color: #6848ff;
 }

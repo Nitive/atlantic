@@ -1,0 +1,53 @@
+.PageFooter {
+    justify-content: space-between;
+    margin-top: 52px;
+    display: flex;
+    padding-top: 24px;
+    padding-left: 52px;
+    padding-right: 52px;
+    margin-bottom: 52px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .PageFooterTitle {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 6px;
+  }
+
+  .PageFooterLinks {
+    display: flex;
+    flex-grow: 1;
+  }
+
+  .PageFooterColumn {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .PageFooterLink {
+    font-size: 14px;
+    line-height: 18px;
+    display: inline-block;
+    margin-bottom: 3px;
+    padding-right: 25px;
+  }
+
+  .PageFooterAddress {
+    font-style: normal;
+    font-size: 12px;
+    line-height: 20px;
+    position: relative;
+    top: -4px;
+    text-align: right;
+  }
+
+  .PageFooterCity {
+    display: block;
+  }
+
+  .PageFooterStreet {
+    display: block;
+  }
